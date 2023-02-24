@@ -6,9 +6,9 @@
 # Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать
 # задуманные Петей числа.
 
-x = int(input())
-y = int(input())
-for i in range(x):
-    for j in range(y):
-        if x == i + j and y == i * j:
+S = int(input("Введите сумму натуральных чисел:  "))
+P = int(input("Введите произведение натуральных чисел:  "))
+for i in range(S):
+    for j in range(P):
+        if S == i + j and P == i * j:
             print(i, j)
