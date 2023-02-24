@@ -5,16 +5,16 @@
 # стороной. Выведите минимальное количество монет, которые нужно
 # перевернуть
 
-n = int(input())
+n = int(input("Укажите количество монеток:  "))
 count_zero = 0
 count_one = 0
 for i in range(n):
-    x = int(input())
-if x == 0:
-    count_zero += 1
-else:
-    count_one += 1
+    x = int(input("Укажите, как лежит монета: решкой (0) или гербом (1):  "))
+    if x == 1:
+        count_zero += 1
+    else:
+        count_one += 1
 if count_one > count_zero:
-    print(count_zero)
+    print(f"Нужно перевернуть {count_zero} монет")
 else:
-    print(count_one)
+    print(f"Нужно перевернуть {count_one} монет")
